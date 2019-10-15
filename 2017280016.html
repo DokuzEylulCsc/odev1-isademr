@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Isa Demir - 2017280016</title></head>
+<body>
+    Isa Demir - 2017280016
+<h2>2019 Guz Doneminin Ilk Odevi</h2>
+<h1 id="result"></h1>
+<label for="id1">1. Sayi</label>
+<input type="number" name="quantity" min="0" max="10" id='id1' /> 
+<br>
+<label for="id2">2. Sayi</label>
+<input type="number" name="quantity" min="0" max="10" id='id2' /> 
+<br><br>
+<button onclick="calculate()">Topla</button>
+<br><br>
+<label for="id3">Metin kutusu 1</label>
+<input type='text' id='id3' /> 
+<br>
+<label for="id4">Metin kutusu 2</label>
+<input type='text' id='id4' /> 
+<br><br>
+<button onclick="paste()">Yapistir</button>
+
+<script>
+
+function calculate(){
+  var result = 0;
+  var say1=parseInt(document.getElementById("id1").value);
+  var say2=parseInt(document.getElementById("id2").value);
+
+  var result=parseFloat(say1)+parseFloat(say2);
+
+  if(!isNaN(result))
+  {
+  alert(say1 + say2);
+  }
+  
+}
+
+</script>  
+
+<script>
+
+function paste(){
+  var yapistir;
+  var metin1=document.getElementById("id3").value;
+  var metin2=document.getElementById("id4").value;
+
+  yapistir = metin1 + " " + metin2
+  
+  alert(yapistir);
+  
+  
+}
+</script>  
+</body>
+<!-- REFERENCES
+1- https://www.quora.com/How-do-I-create-a-text-field-which-only-accepts-a-number-in-HTML-5
+2- https://www.youtube.com/watch?v=v6WgrDwgx2U
+-->
+
+</html>
